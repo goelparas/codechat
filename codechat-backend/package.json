@@ -4,7 +4,8 @@
   "description": "Chat with your coding buddies while Coding.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "TG",
   "license": "ISC",
@@ -18,9 +19,11 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.3.1",
     "node": "^20.5.0",
-    "nodemon": "^3.0.1",
     "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

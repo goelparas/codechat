@@ -1,6 +1,7 @@
 
-export const ROOMTYPE = {
+ const ROOMTYPE = {
     RESTRICTED: 'restricted',
     PUBLIC: 'public'
 }
 
+module.exports = {ROOMTYPE}
