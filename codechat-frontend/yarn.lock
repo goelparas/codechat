@@ -943,6 +943,29 @@
   dependencies:
     "@lezer/common" "^1.0.0"
 
+"@lit-labs/ssr-dom-shim@^1.0.0", "@lit-labs/ssr-dom-shim@^1.1.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@lit-labs/ssr-dom-shim/-/ssr-dom-shim-1.2.0.tgz"
+  integrity sha512-yWJKmpGE6lUURKAaIltoPIE/wrbY3TEkqQt+X0m+7fQNnAv0keydnYvbiJFP1PnMhizmIWRWOG5KLhYyc/xl+g==
+
+"@lit/reactive-element@^1.3.0", "@lit/reactive-element@^1.6.0":
+  version "1.6.3"
+  resolved "https://registry.npmjs.org/@lit/reactive-element/-/reactive-element-1.6.3.tgz"
+  integrity sha512-QuTgnG52Poic7uM1AN5yJ09QMe0O28e10XzSvWDz02TJiiKee4stsiownEIadWm8nYzyDAyT+gKzUoZmiWQtsQ==
+  dependencies:
+    "@lit-labs/ssr-dom-shim" "^1.0.0"
+
+"@lottiefiles/lottie-player@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/@lottiefiles/lottie-player/-/lottie-player-2.0.4.tgz"
+  integrity sha512-OU3HxAt7noWr+kzf59paS7/f4+IT1EupJIsf4h3RxsbljDaRtCunanIjchprNFYHdG+SobnyxwWKtvTDxjI5jg==
+  dependencies:
+    "@types/pako" "^1.0.1"
+    lit "^2.1.2"
+    lottie-web "^5.12.2"
+    pako "^2.0.4"
+    resize-observer-polyfill "^1.5.1"
+
 "@mui/base@5.0.0-beta.8":
   version "5.0.0-beta.8"
   resolved "https://registry.npmjs.org/@mui/base/-/base-5.0.0-beta.8.tgz"
@@ -1206,6 +1229,11 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-20.2.3.tgz"
   integrity sha512-pg9d0yC4rVNWQzX8U7xb4olIOFuuVL9za3bzMT2pu2SU0SNEi66i2qrvhE2qt0HvkhuCaWJu7pLNOt/Pj8BIrw==
 
+"@types/pako@^1.0.1":
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/@types/pako/-/pako-1.0.7.tgz"
+  integrity sha512-YBtzT2ztNF6R/9+UXj2wTGFnC9NklAnASt3sC0h2m1bbH7G6FyBIkt4AN8ThZpNfxUo1b2iMVO0UawiJymEt8A==
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz"
@@ -1255,6 +1283,11 @@
   version "7.3.13"
   resolved "https://registry.npmjs.org/@types/semver/-/semver-7.3.13.tgz"
   integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
+
+"@types/trusted-types@^2.0.2":
+  version "2.0.7"
+  resolved "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.7.tgz"
+  integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
 
 "@types/use-sync-external-store@^0.0.3":
   version "0.0.3"
@@ -3074,6 +3107,31 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
+lit-element@^3.3.0:
+  version "3.3.3"
+  resolved "https://registry.npmjs.org/lit-element/-/lit-element-3.3.3.tgz"
+  integrity sha512-XbeRxmTHubXENkV4h8RIPyr8lXc+Ff28rkcQzw3G6up2xg5E8Zu1IgOWIwBLEQsu3cOVFqdYwiVi0hv0SlpqUA==
+  dependencies:
+    "@lit-labs/ssr-dom-shim" "^1.1.0"
+    "@lit/reactive-element" "^1.3.0"
+    lit-html "^2.8.0"
+
+lit-html@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.npmjs.org/lit-html/-/lit-html-2.8.0.tgz"
+  integrity sha512-o9t+MQM3P4y7M7yNzqAyjp7z+mQGa4NS4CxiyLqFPyFWyc4O+nodLrkrxSaCTrla6M5YOLaT3RpbbqjszB5g3Q==
+  dependencies:
+    "@types/trusted-types" "^2.0.2"
+
+lit@^2.1.2:
+  version "2.8.0"
+  resolved "https://registry.npmjs.org/lit/-/lit-2.8.0.tgz"
+  integrity sha512-4Sc3OFX9QHOJaHbmTMk28SYgVxLN3ePDjg7hofEft2zWlehFL3LiAuapWc4U/kYwMYJSh2hTCPZ6/LIC7ii0MA==
+  dependencies:
+    "@lit/reactive-element" "^1.6.0"
+    lit-element "^3.3.0"
+    lit-html "^2.8.0"
+
 locate-path@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz"
@@ -3117,6 +3175,23 @@ loose-envify@^1.1.0, loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lottie-player@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/lottie-player/-/lottie-player-1.0.0.tgz"
+  integrity sha512-XrwIIUCDtA2GJ/yH6Ql3y2m4aqfOHt7HKGyZAfk5BuA0wvU/ahJ/E/ZN5/5PTD7FpTdYLF+k20ZmemLNY58NKg==
+
+lottie-react@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/lottie-react/-/lottie-react-2.4.0.tgz"
+  integrity sha512-pDJGj+AQlnlyHvOHFK7vLdsDcvbuqvwPZdMlJ360wrzGFurXeKPr8SiRCjLf3LrNYKANQtSsh5dz9UYQHuqx4w==
+  dependencies:
+    lottie-web "^5.10.2"
+
+lottie-web@^5.10.2, lottie-web@^5.12.2:
+  version "5.12.2"
+  resolved "https://registry.npmjs.org/lottie-web/-/lottie-web-5.12.2.tgz"
+  integrity sha512-uvhvYPC8kGPjXT3MyKMrL3JitEAmDMp30lVkuq/590Mw9ok6pWcFCwXJveo0t5uqYw1UREQHofD+jVpdjBv8wg==
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -3331,6 +3406,11 @@ p-locate@^5.0.0:
   dependencies:
     p-limit "^3.0.2"
 
+pako@^2.0.4:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/pako/-/pako-2.1.0.tgz"
+  integrity sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz"
@@ -3534,7 +3614,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-"react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^17.0.0 || ^18.0.0", react-dom@^18.2.0, react-dom@>=16, react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=16.8.0:
+"react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.0 || ^18.0.0", react-dom@^18.0.0, react-dom@^18.2.0, react-dom@>=16, react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -3611,7 +3691,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-"react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^17.0.0 || ^18.0.0", react@^18.2.0, react@>=16, react@>=16.6.0, react@>=16.8, react@>=16.8.0:
+"react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^17.0.0 || ^18.0.0", react@^18.0.0, react@^18.2.0, react@>=16, react@>=16.6.0, react@>=16.8, react@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -3679,6 +3759,11 @@ reselect@^4.1.8:
   version "4.1.8"
   resolved "https://registry.npmjs.org/reselect/-/reselect-4.1.8.tgz"
   integrity sha512-ab9EmR80F/zQTMNeneUr4cv+jSwPJgIlvEmVwLerwrWVbpLlBuls9XHzIeTFy4cegU2NHBp3va0LKOzU5qFEYQ==
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -3805,6 +3890,11 @@ socket.io-parser@~4.2.4:
   dependencies:
     "@socket.io/component-emitter" "~3.1.0"
     debug "~4.3.1"
+
+sonner@^1.4.41:
+  version "1.4.41"
+  resolved "https://registry.npmjs.org/sonner/-/sonner-1.4.41.tgz"
+  integrity sha512-uG511ggnnsw6gcn/X+YKkWPo5ep9il9wYi3QJxHsYe7yTZ4+cOd1wuodOUmOpFuXL+/RE3R04LczdNCDygTDgQ==
 
 source-map-js@^1.0.2:
   version "1.0.2"

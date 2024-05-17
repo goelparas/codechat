@@ -25,9 +25,10 @@ export class ApiService {
     }
     public async getCurrentUser (data:string| null):Promise<any>{
         try{
+
             const reqUrl = import.meta.env.VITE_BASE_URL+'/api/auth/getuser';
             const options:AxiosRequestConfig = {
-                method:'POST',
+                method:'GET',
                 url:reqUrl,
                 headers:{  
                     "authToken":data,

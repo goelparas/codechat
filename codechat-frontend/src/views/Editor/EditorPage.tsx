@@ -7,7 +7,8 @@ import { useParams } from 'react-router-dom'
 import Button from '../../shared-resources/components/Button/Button'
 import { useDispatch } from 'react-redux'
 import { disconnectConnection } from '../../store/actions/sockets.action'
-import toast, { Toaster } from 'react-hot-toast'
+import { toast, Toaster } from 'sonner'
+ 
 
 const EditorPage = () => {
     const roomMembers = useSelector(
@@ -29,9 +30,10 @@ const EditorPage = () => {
     return (
         <>
             <Toaster />
-            <div className="m-4 flex gap-5 border h-[90vh] rounded-2xl shadow-xl overflow-hidden">
-                <div className="min-w-[20%] max-w-[20%] flex flex-col gap-5 p-5 justify-between min-h-full">
-                    <div className="flex ">
+            
+            <div className="m-4 flex gap-5  h-[90vh] z-[9999999] border-2 rounded-2xl shadow-xl overflow-hidden bg-[#F8F3F2]">
+                <div className="min-w-[20%] max-w-[20%] flex flex-col z-[9999] gap-5 p-5 justify-between min-h-full bg-[#F8F3F2]">
+                    <div className="flex">
                         {roomMembers?.length ? (
                             roomMembers.map((user) => (
                                 <span key={user._id} className="m-2">
@@ -45,17 +47,17 @@ const EditorPage = () => {
                             <></>
                         )}
                     </div>
-                    <div className="w-full ">
+                    <div className="w-full z-[9999]">
                         <Button
                             name="Copy Code "
                             fontColor="text-black"
-                            background="bg-primaryBlack"
+                            background="bg-[#a5e166]"
                             click={copyRoomId}
                         />
                         <Button
-                            name="Leave "
+                            name="Leave"
                             fontColor="text-black"
-                            background="bg-primaryBlack"
+                            background="bg-[#E2E1F4]"
                             click={leaveRoom}
                         />
                     </div>

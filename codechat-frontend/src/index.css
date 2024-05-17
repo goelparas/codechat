@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+    padding: 0;
+    margin:0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+    display:fixed;
+    top:0;
+}
