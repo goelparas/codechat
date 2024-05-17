@@ -18,7 +18,6 @@ export const SocketReducer: Reducer<SocketType> = (state: SocketType = initialSt
 
         switch (action.type) {
             case SocketActionType.JOIN_COMPLETED: {
-                console.log(action.payload)
 
                 draft.instance = action.payload;
                 break;
